@@ -43,7 +43,22 @@ public class MainActivity extends AppCompatActivity {
                 String startPosition = spinStartPosition.getSelectedItem().toString();
                 String destination = spinDestination.getSelectedItem().toString();
 
-                textDescription.setText("description : posisi awal anda " + startPosition + " dan tujuan anda " + destination);
+
+                //condition when value of startPosition is "Jakarta" and destination is "Rembang"
+                if (startPosition.equalsIgnoreCase("Jakarta") && destination.equalsIgnoreCase("Rembang")){
+                    textDescription.setText("good destination \n" +
+                            "description : posisi awal anda adalah "+startPosition+" dan tujuan anda adalah "+destination);
+
+                //condition when value of startPosition is "Bandung" and destination is "Semarang"
+                }else if (startPosition.equalsIgnoreCase("Bandung") && destination.equalsIgnoreCase("Semarang")){
+                    textDescription.setText("destination okey \n" +
+                            "description : posisi awal anda adalah "+ startPosition + "dan tujuan anda adalah "+destination);
+
+                //other condition
+                }else {
+                    textDescription.setText("description : posisi awal anda " + startPosition + " dan tujuan anda " + destination);
+                }
+
             }
         });
 
