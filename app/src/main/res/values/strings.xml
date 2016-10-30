@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Sample Spinner</string>
+
+    <string-array name="array_location">
+        <item>Jakarta</item>
+        <item>Bandung</item>
+        <item>Semarang</item>
+        <item>Rembang</item>
+    </string-array>
+
+    <string-array name="array_location_destination">
+        <item>Jakarta</item>
+        <item>Bandung</item>
+        <item>Semarang</item>
+        <item>Rembang</item>
+        <item>Lasem</item>
+        <item>Pati</item>
+    </string-array>
+
+</resources>
